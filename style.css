@@ -36,7 +36,7 @@ body {
 
 /* Add a color to the active/current page */
 .navbar a.active {
-  background-color: #04AA6D;
+  background-color: #ce4c5d;
   color: white;
 }
 
