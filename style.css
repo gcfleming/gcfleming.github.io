@@ -1,7 +1,7 @@
 body { margin: 0;
        padding: 0;
        background-color: #fff 
-	   font-size: 12px;
+	       font-size: 12px;
        font-family: "Arial", sans-serif;
 }
 * { box-sizing: border-box;
@@ -188,6 +188,6 @@ ul.skills li:last-child{
 
 }
 
-#dates {
+.dates h3 {
 	color: #d56674;
 }
