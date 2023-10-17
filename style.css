@@ -81,6 +81,8 @@ p {
 	font-size: 20px;
 	color: black;
 	text-align: left;
+	margin-inline-start: 2px;
+	margin-inline-end: 2px;
 }
 
 /*the paragraph "p" class a and b is selected with a smaller than body font size, but right aligned, for displaying the image source external links, the back-to-top and streight to table internal link */
