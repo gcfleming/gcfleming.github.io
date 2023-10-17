@@ -1,193 +1,118 @@
-body { margin: 0;
-       padding: 0;
-       background-color: #fff 
-	       font-size: 12px;
-       font-family: "Arial", sans-serif;
+/*
+GEOM101 A2 by Grace Cavanagh
+This is the CSS page for both index.html and about.html
+*/
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #fff;
+	font-family: "Lucida Console", monospace;
+	font-size: 24px;
+	text-align: center;
 }
-* { box-sizing: border-box;
+/* red navbar with relative position and hidden overflow*/
+.navbar {
+	overflow: hidden;
+	position: relative;
+	background-color: #6f000e;
 }
 
-/* split navigation bar I got inspiration from W3 schools https://www.w3schools.com/howto/howto_css_topnav_split.asp */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
+/* styling the two links to float left, */
+.navbar a {
+	float: left;
+	color: #f2f2f2;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 24px;
 }
-/* styling nav bar links */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+  
+/* Change the color of links on hover: black text and greyish background*/
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
 }
-/* Create a right-aligned (split) link inside the navigation bar */
-.topnav a.split {
-  float: right;
+
+/* Add a color to the active/current page */
+.navbar a.active {
   background-color: #04AA6D;
   color: white;
 }
+
 /* hX Primary Rules*/
-h1 { font-weight: 300;
-     margin: 5px 0 0;
-     font-size: 40px;
-     color:#ba0018;
-     padding: 0 10px 10px;
-     border-radius:2px;
-	 font-family: "Lucida Console", monospace;
+h1 {
+	font-weight: 300;
+	margin: 5px 0 0;
+	font-size: 40px;
+	color:#ba0018;
+	padding: 0 10px 10px;
+	border-radius:2px;
+	font-family: "Lucida Console", monospace;
 }
-h2 { color: #ba0018;
-     width: 150px;
-     font-size: 18px;
-     padding-left: 20px;
-     padding-top: 12px;
-     font-weight:700;
-     font-family: "Lucida Console", monospace;
+
+h2 { 
+	color: #ba0018;
+	width: 150px;
+	font-size: 18px;
+	padding-left: 20px;
+	padding-top: 12px;
+	font-weight:700;
+	font-family: "Lucida Console", monospace;
 }
-h3 { font-size: 18px;
-     font-weight: bold;
-     margin-bottom: 0;
-     line-height: 28px;
-     font-family: "Lucida Console", monospace;
+
+h3 { 
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 0;
+	line-height: 28px;
+	font-family: "Lucida Console", monospace;
 }
-h4 { font-size: 14px;
-     font-weight: normal;
-     margin-bottom: 0;
-     line-height: 20px;
-     font-family: "Lucida Console", monospace;
+h4 { 
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 0;
+	line-height: 20px;
+	font-family: "Lucida Console", monospace;
 }
 h2, h3 { margin-top: 5px }
-a { color: #ba0018;
-    display: inline-block;
-    text-decoration: none;
-    padding:2px 4px;
-    border-radius:2px;
-    margin-right:-2px;
-}
-.key:first-child { margin-left: 0 }
-.key { margin: 0 10px;
-       position: relative;
-}
-.key::before { content: '◆';
-               position: absolute;
-               left: -15px;
-               color: #555;
-               font-size: 7pt;
-}
-.key:first-child::before { content: '' }
-.section { border-bottom: 1px solid #ddd;
-           padding: 10px 0 15px;
-}
-.section:last-child { border: none }
-.section-text { width: 80%;
-                font-size: 18px;
-                line-height: 24px;
-                margin: 10px 0 10px;
-                padding: 0 10px;
-}
-.subsection { margin: 10px 0 5px }
-.desc { font-size: 16px; font-family: 'Source Sans Pro', sans-serif; color:#444;}
-.contact-info { font-size: 16px;
-                text-align: right;
-}
-.light { color: #aaa;letter-spacing:1px;
-         font-size: 14px;
-         line-height:28px;
-         font-family: 'Source Sans Pro', sans-serif;
-         text-transform:uppercase;
-}
-ul{
-  padding-left:15px;
+
+p {  
+	font-size: 20px;
+	color: black;
+	text-align: left;
 }
 
-ul.skills{
-  float:left;
-  width:30%;
-  padding-left:0px;
-  margin: 0 20px 0 0;
+/*the paragraph "p" class a and b is selected with a smaller than body font size, but right aligned, for displaying the image source external links, the back-to-top and streight to table internal link */
+p.a {
+	text-align: right;
+	font-size: 20px;
+}
+/*the paragraph "p" class b has a very large bottom margin to better space the images*/
+p.b {
+	text-align: right;
+	font-size: 20px;
+	margin-bottom: 100px;
 }
 
-ul.skills li{
-  list-style: none;
-  font-size:16px;
-  margin-bottom:10px;
-}
-
-ul.skills li:last-child{
-  margin:0;
-}
+/* The <figure> block embeds each image, giving them each a unique id ad unique caption*/
+/* A large top-margin of 250px along with the p.b bottom margin separates the picture nicely*/
+figure{ margin-top: 250px; }
 
 /*
- Float Rules
+Table style and formatting below
+INSTRUCTION 3 ITEM 1 implemetation: TABLE-->
+Referenced: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables -->
 */
-.col { float: left }
-.col-right { float: right }
-
-/*
- Page Rules
-*/
-.page { width: 1000px;
-        min-height: 29.7cm;
-        margin: 1cm auto;
-
-        background: white;
-        padding: 20px 50px;
+/* The <table> block is formatted with a 3px thick black outter border*/
+table{
+	border: 3px solid black;
 }
-.subpage { padding: 1cm;
-           border: 1px red solid;
-           height: 297mm;
-}
-
-@page { size: A4;
-        margin: 0;
-}
-
-@media print {
-    .page { margin: 0;
-            border: initial;
-            border-radius: initial;
-            width: initial;
-            min-height: initial;
-            box-shadow: initial;
-            background: initial;
-            page-break-after: always;
-    }
-    .page-break{
-      page-break-before: always;
-      padding-top:30px;
-    }
-
-    body { font-size: 12pt;}
-    h1{
-      font-size: 23pt;
-    }
-
-    h2{
-      font-size:10pt;
-      width: 3cm;
-      padding-left: 10px;
-    }
-
-    h3 { font-size: 10pt; line-height:11pt}
-
-    .section-text { font-size: 9pt; line-height: 14pt; }
-
-    .light { font-size: 7.5pt; line-height:12pt; color:#ddd; }
-    
-    .page { width: 21cm }
-    ul {margin:5px 0 0}
-    .section { padding: 5px 0 8px }
-    .section-text { width: 15cm; margin: 5px 0 5px;}
-    .subsection { margin: 5px 0 0 }
-    .desc { font-size: 9pt }
-    
-    .contact-info { font-size: 9pt}
-    
-    ul.skills{margin: 0 10px 0 0;}
-    ul.skills li{ font-size: 9pt; margin-bottom:0}
-
-}
-
-.dates h3 {
-	color: #d56674;
+/* The header cells in <table> are formatted with a 2px thick black inner border*/
+th{
+	border: 2px solid black;
+} 
+/* The rest of the cells in <table> are formatted with a 1px thick black inner border*/
+td{
+	border: 1px solid black;
 }
