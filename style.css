@@ -42,8 +42,8 @@ body {
 
 /* hX Primary Rules*/
 h1 {
-	font-weight: 300;
-	margin: 5px 0 0;
+	font-weight: 900;
+	margin: 10px 0 0;
 	font-size: 40px;
 	color:#ba0018;
 	padding: 0 10px 10px;
@@ -53,12 +53,13 @@ h1 {
 
 h2 { 
 	color: #ba0018;
-	width: 150px;
+	width: 180px;
 	font-size: 18px;
-	padding-left: 20px;
+	padding-left: 18px;
 	padding-top: 12px;
 	font-weight:700;
 	font-family: "Lucida Console", monospace;
+	text-align: center;
 }
 
 h3 { 
