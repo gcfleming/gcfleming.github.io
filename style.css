@@ -97,6 +97,17 @@ p.b {
 	margin-bottom: 100px;
 }
 
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
 /* The <figure> block embeds each image, giving them each a unique id ad unique caption*/
 /* A large top-margin of 250px along with the p.b bottom margin separates the picture nicely*/
 figure{ margin-top: 250px; }
