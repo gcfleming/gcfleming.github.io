@@ -64,7 +64,8 @@ h2 {
 h3 { 
 	font-size: 18px;
 	font-weight: bold;
-	margin-bottom: 0;
+	margin-bottom: 8px;
+	padding-bottom: 10px;
 	line-height: 28px;
 	font-family: "Lucida Console", monospace;
 }
