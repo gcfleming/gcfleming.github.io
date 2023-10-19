@@ -57,7 +57,7 @@ h2 {
 	margin: 10px 0 0;
 	font-size: 25px;
 	color:#ba0018;
-	padding: 5px 10px 10px;
+	padding: 10px 10px 10px 10px;
 	font-family: "Lucida Console", monospace;
 }
 
@@ -74,10 +74,12 @@ span {
 	font-weight: bold;
 }
 
+/* https://www.w3schools.com/css/css_list.asp */
 ul {
 	font-size: 20px;
 	padding: 5px 10px 10px;
 	font-family: "Lucida Console", monospace;
+	list-style-position: inside;
 }
 	
 	
@@ -95,6 +97,8 @@ p {
 	color: black;
 	text-align: left;
 	margin-inline-start: 2px;
+	letter-spacing: 1.5px;
+	line-height: 1.8;
 }
 
 /* https://www.w3schools.com/cssref/css_selectors.php and https://www.w3schools.com/css/css_link.asp */
@@ -147,5 +151,4 @@ div.scroll-container img {
 /*
 .grid-bottom p {
 	text-align: center;
-}
-*/
+}*/
