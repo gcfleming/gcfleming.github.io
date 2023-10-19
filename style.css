@@ -110,16 +110,12 @@ div.desc {
   text-align: center;
 }
 
-img {
-  float: right;
-}
-
 .grid-top {
   display: grid;
   column-gap: 50px;
   grid-template-columns: auto auto;
   background-color: #2196F3;
-  padding: 10px;
+  padding: 10px 50px 20px 50px;
 }
 
 .grid-bottom {
