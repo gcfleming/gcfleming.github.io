@@ -1,26 +1,40 @@
+<!-- GEOM101 Assignment 2 Website - Grace Cavanagh -->
+<!-- I decided to make a simple website about my new puppy so I could focus most of the time on
+the html and css rather than search for content and come up with information. I see her every day so the
+text was easy to come up with -->
+<!-- The 3 options I chose are -
+	1. Navigation Bar
+	2. 3 External Links
+	3. 5 Original Images at Native Size
+	I will indicate when these each begin and end -->
+
 <!DOCTYPE html>
 <!-- put W3 schools here for english declaration -->
 <html lang="en">
 	<head>
-        <!-- title for the tab -->
+        <!-- title for the tab and linking external css sheet from github -->
 		<title>Penny's Resume</title>
-        <!-- linking the external css sheet from github -->
 		<link rel="stylesheet" href="style.css">
 	</head>	
 	<body>
 		<!-- this h1 heading is for both pages -->
 		<h1>Penny Cavanagh</h1>
 		
-		<!-- start of NAVIGATION BAR, heavily inspired by w3schools at WRITE URL HERE-->
+		<!-- start of 1. NAVIGATION BAR, heavily inspired by w3schools at WRITE URL HERE-->
 		<!-- creates a white navbar with two pages, one active -->
 		<div class="navbar">
 			<a class="active" href="index.html">Home</a>
 			<a href="pictures.html">More About Me</a>
-		</div>
+		</div> <!-- end of 1. NAVIGATION BAR -->
 		
 		<!-- first section of page -->
+		<!-- using w3 schools column page I made a grid in an attempt to fix the dysfunction of my layout -->
 		<div class="grid-top">
 			<div class="grid-item">
+				<!-- grid-items are mostly the same in both the top and bottom grid, but 
+				p kept taking precendence over the text-align and I only wanted two columns up top, so I
+				made two different grids for the bottom and top of my page -->
+				<!-- left side of top grid with resume text -->
 				<h2>Interests</h2>
 				<p>I enjoy running, chewing, attacking and spending time with my new family. ewuirhouiwerhiuwehruwerhiwuerwe</p>
 		
@@ -33,20 +47,23 @@
 				<h2>Current Projects</h2>
 				<p>I ftytyrt</p>
 			</div>
+			<!-- right side of top grid with picture -->
 			<div class="grid-item">
 				<img src="pennysit.jpg" alt="Polite" width="800" height="600">
 			</div>
 		</div>
 			<h2>Adopt a Puppy Like Me!</h2>
-			<div class="grid-bottom">
+		<!-- start of 2. THREE EXTERNAL LINKS, I made another grid with more columns for links and
+		made a specific class for p in grid-bottom so links could center -->
+		<div class="grid-bottom">
 			<div class="grid-item">
-				<p><a href="https://www.homewardboundrescue.ca/">Homeward Bound Rescue (Toronto)</a></p>
-			</div>
-			<div class="grid-item">
-				<p><a href="https://burlingtonhumane.ca/adoption/adopt-a-dog-puppy/">Burlington Humane Society</a></p>
+				<p><a href="https://www.homewardboundrescue.ca/">Homeward Bound Rescue GTA</a></p>
 			</div>
 			<div class="grid-item">
 				<p><a href="https://www.hbspca.com/adopt-animals/view-dogs/">Hamilton SPCA</a></p>
+			</div>
+			<div class="grid-item">
+				<p><a href="https://burlingtonhumane.ca/adoption/adopt-a-dog-puppy/">Burlington Humane Society</a></p>
 			</div>
 		</div>
 	</body>
