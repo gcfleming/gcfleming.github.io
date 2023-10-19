@@ -114,7 +114,15 @@ img {
   float: right;
 }
 
-.grid-container {
+.grid-top {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: 700px 700px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-bottom {
   display: grid;
   column-gap: 50px;
   grid-template-columns: auto auto auto;
