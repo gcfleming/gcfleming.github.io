@@ -46,7 +46,7 @@ h1 {
 	margin: 10px 0 0;
 	font-size: 40px;
 	color:#ba0018;
-	padding: 0 10px 10px;
+	padding: 0 5px 10px;
 	border-radius:2px;
 	font-family: "Lucida Console", monospace;
 }
@@ -78,7 +78,6 @@ p {
 	color: black;
 	text-align: left;
 	margin-inline-start: 2px;
-	margin-inline-end: 2px;
 }
 
 /*the paragraph "p" class a and b is selected with a smaller than body font size, but right aligned, for displaying the image source external links, the back-to-top and streight to table internal link */
