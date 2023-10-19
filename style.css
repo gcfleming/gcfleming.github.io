@@ -122,24 +122,18 @@ img {
   float: right;
 }
 
-/* The <figure> block embeds each image, giving them each a unique id ad unique caption*/
-/* A large top-margin of 250px along with the p.b bottom margin separates the picture nicely*/
-figure{ margin-top: 250px; }
-
-/*
-Table style and formatting below
-INSTRUCTION 3 ITEM 1 implemetation: TABLE-->
-Referenced: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables -->
-*/
-/* The <table> block is formatted with a 3px thick black outter border*/
-table{
-	border: 3px solid black;
+.grid-container {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
 }
-/* The header cells in <table> are formatted with a 2px thick black inner border*/
-th{
-	border: 2px solid black;
-} 
-/* The rest of the cells in <table> are formatted with a 1px thick black inner border*/
-td{
-	border: 1px solid black;
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
