@@ -134,3 +134,7 @@ div.desc {
   font-size: 30px;
   text-align: center;
 }
+
+.grid-bottom p {
+	text-align: center;
+}
