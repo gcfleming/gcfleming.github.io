@@ -115,11 +115,11 @@ img {
 }
 
 .grid-top {
-  display: grid;
-  column-gap: 50px;
-  grid-template-columns: 700px 700px;
-  background-color: #2196F3;
-  padding: 10px;
+	display: grid;
+	column-gap: 50px;
+	grid-template-columns: auto auto;
+	background-color: #2196F3;
+	padding: 10px;
 }
 
 .grid-bottom {
