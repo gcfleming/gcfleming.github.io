@@ -1,6 +1,8 @@
-/*
-GEOM101 A2 by Grace Cavanagh
-This is the CSS page for both index.html and about.html
+/* GEOM101 A2 by Grace Cavanagh
+This is the CSS page for both index.html and aboutme.html
+*/
+
+/* setting the overall margin and padding to 0 so I can instead specify for each element instead 
 */
 body {
 	margin: 0;
