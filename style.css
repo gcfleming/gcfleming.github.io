@@ -1,6 +1,10 @@
 /* GEOM101 A2 by Grace Cavanagh
 This is the CSS page for both index.html and aboutme.html
-I used this website's color palette https://www.color-hex.com/color/ba0018
+I used this website's color palette https://www.color-hex.com/color/ba0018 throughout the whole project
+I'll indicate each of the 3 options I chose
+	1. Navigation Bar
+	2. 3 Links with specific class for external URLs and style change
+	3. 5 Original Pictures at Native size
 */
 
 /* setting the overall margin and padding to 0 so I can instead specify for each element instead 
@@ -13,37 +17,34 @@ body {
 	font-size: 24px;
 	text-align: center;
 }
-/* red navbar with relative position and hidden overflow*/
+/* NAVBAR rules - horizontal, inspiration: https://www.w3schools.com/css/css_navbar_horizontal.asp */
+/*dark red navbar with two links that float left, turn pink when active and light pink with black text on hover */
 .navbar {
 	overflow: hidden;
 	position: relative;
 	background-color: #6f000e;
 }
-
-/* styling the two links to float left, */
 .navbar a {
 	float: left;
 	color: #f2f2f2;
-	font-family: Arial, Helvetica, sans-serif;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 24px;
 }
-  
-/* Change the color of links on hover: black text and greyish background*/
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: #f8e5e7;
     color: black;
 }
-
-/* Add a color to the active/current page */
 .navbar a.active {
   background-color: #ce4c5d;
   color: white;
 }
 
-/* hX Primary Rules*/
+/* hX and p Rules*/
+/* big red heading for both pages that stays centered - I based the rest of my hX on this after
+to make a hierarchy. It still looks like an amature's website but I tried to make it have basic visual appeal with this */
+/* same font for all, gets smaller as you go down the hX and sometimes I determined padding was needed after testing it */
 h1 {
 	font-weight: 900;
 	font-size: 55px;
@@ -51,31 +52,42 @@ h1 {
 	padding: 16px 5px 16px;
 	font-family: "Lucida Console", monospace;
 }
-
 h2 { 
 	font-weight: 700;
 	margin: 10px 0 0;
 	font-size: 25px;
-	color:#ba0018;
+	color:#5d000c;
 	padding: 10px 10px 10px 10px;
 	font-family: "Lucida Console", monospace;
 }
-
+/* had to make padding smaller on bottom so the dates were closer to it and looked like a part of it */
 h3 { 
 	font-weight: 300;
 	margin: 10px 0 0;
 	font-size: 20px;
 	color:#ce4c5d;
-	padding: 5px 10px 10px;
+	padding: 5px 10px 3px;
 	font-family: "Lucida Console", monospace;
 }
-
+/* had to change the letter spacing and line height because the p text looked really crammed
+compared to the rest of the fonts. used help from https://www.w3schools.com/css/css_text_spacing.asp */
+p {  
+	font-size: 18px;
+	color: black;
+	text-align: left;
+	margin-inline-start: 2px;
+	margin-inline-end: 1px;
+	letter-spacing: 1.3px;
+	line-height: 1.5;
+}
+/* used to make the certificate in education bold beside the name of the school. I've seen this used in many resumes.*/
 span {
 	font-weight: bold;
 }
 
-
-/* list rules - referenced from https://www.w3schools.com/css/css_list.asp */
+/* list rules - got help styling my list with https://www.w3schools.com/css/css_list.asp */
+/* I had a hard time lining up the points but keeping the whole text centered at the same time, so it doesn't
+look exactly how I wanted but it's better spatially in my opinion than left aligning it */
 ul {
 	font-size: 20px;
 	padding: 5px 10px 10px;
@@ -84,60 +96,59 @@ ul {
 	letter-spacing: 1.5px;
 	line-height: 1.8;
 }
-	
-	
-/* https://www.w3schools.com/html/html_id.asp */
+		
+/* I wanted the bottom heading to stand out more with the same color as the navbar and lighter font 
+so I used an id with help from here https://www.w3schools.com/html/html_id.asp */
+/* */
 #BottomHeading {
-	font-weight: bold;
-	color: #c73246;
+	color: #e399a2;
 	background-color: #6f000e;
+	margin: 0;
+}
+/* after finishing everything, the second page p was way too close to the edge */
+#pageTwo {
+	padding: 10px 10px 10px;
 }
 
-/* h2, h3 { margin-top: 5px } */
-
-p {  
-	font-size: 20px;
-	color: black;
-	text-align: left;
-	margin-inline-start: 2px;
-	margin-inline-end: 1px;
-	letter-spacing: 1.5px;
-	line-height: 1.8;
-}
-
-/* https://www.w3schools.com/cssref/css_selectors.php and https://www.w3schools.com/css/css_link.asp */
+/* 2. 3 UNIQUE LINKS */
+/* using help from these two https://www.w3schools.com/cssref/css_selectors.php and https://www.w3schools.com/css/css_link.asp 
+I was able to make a class for only the external links to turn red and double underline*/
 a[href^="https"] {
 	color: red;
+	text-decoration-line: underline;
+	text-decoration-style: double;
 }
 
 /* https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp */
-
+/* I tried lots of methods of making a gallery but */
 galleryImg {
   width: 100%;
   height: auto;
 }
-
 desc {
   padding: 15px;
   text-align: center;
 }
-
+/* */
 * {
   box-sizing: border-box;
 }
-
+/* */
 .responsive {
   padding: 0 6px;
   float: left;
   width: 24.99999%;
 }
-
+/* */
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
-
+/* column rules using help from W3 Grid Container - https://www.w3schools.com/css/css_grid.asp */
+/* I had a hard time cleaning up the text and floating a picture beside it so I decided to split
+it into two columns at the top and then I wanted the 3 links to be horizontal like a footer so I made another
+set of 3 columns at the bottom */
 .grid-top {
   display: grid;
   column-gap: 10px;
@@ -145,7 +156,8 @@ desc {
   background-color: #f1ccd0;
   padding: 0px 50px 0px 50px;
 }
-
+/* I wanted the links to be centered but they were being overridden by p. so I made the three
+columns and had to add another class for the p in grid-bottom only */
 .grid-bottom {
   display: grid;
   column-gap: 50px;
@@ -153,11 +165,11 @@ desc {
   background-color: #f1ccd0;
   padding: 10px;
 }
-
 .grid-bottom p {
 	text-align: center;
 }
-
+/* this centers each group of content in their respective column, so any individual piece inside the column needed another seperate
+class to modify them */
 .grid-item {
   background-color: #f1ccd0;
   border: 1px solid #f1ccd0;
@@ -165,7 +177,10 @@ desc {
   font-size: 30px;
   text-align: center;
 }
-
-.center {
+/* I know I could have made all my p centered and just make the Current Projects p have it's own class
+making it left aligned, but after working on everything the only thing off was just the two dates. So i made it's
+own class to make it quick (which I know may not have been correct) */
+.dates {
 	text-align: center;
+	font-size: 15px;
 }
