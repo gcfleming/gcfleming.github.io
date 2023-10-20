@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<!-- put W3 schools here for english declaration -->
 <html lang="en">
 	<head>
-        <!-- title for the tab -->
 		<title>About Me</title>
-        <!-- linking the external css sheet from github -->
 		<link rel="stylesheet" href="style.css">
 	</head>	
 	<body>
 		<!-- this h1 heading is for both pages -->
 		<h1>Penny Cavanagh</h1>
 		
-		<!-- start of NAVIGATION BAR, heavily inspired by w3schools at WRITE URL HERE-->
+		<!-- start of the 1. NAVIGATION BAR on page two, heavily inspired by w3schools at https://www.w3schools.com/css/css_navbar_horizontal.asp -->
 		<!-- creates a white navbar with two pages, one active -->
 		<div class="navbar">
 			<a href="index.html">Home</a>
@@ -19,16 +16,46 @@
 		</div>
 
     <h2>Who am I?</h2>
-	<p>I was born May 9th 2023 at Halton Hills Labradoodles to my mom Honey and my Dad
+	<p id="pageTwo">I was born May 9th 2023 at Halton Hills Labradoodles to my mom Honey and my Dad
 	Sunny. On July 16th my family picked me up, and now I'm terrorizing the streets of Waterdown, Ontario.
 	Here's some pictures of how my last few months have been in my new home.</p>
-		<!-- first section of page -->
-    <div class="ScrollFrame">
-      <img src="pennybasketball.jpg" alt="Sporty" width="600" height="400">
-      <img src="pennyattackre1.jpg" alt="Vicious" width="600" height="400">
-      <img src="pennysleep.jpg" alt="Tired" width="600" height="400">
-      <img src="pennychair.jpg" alt="Hungry" width="600" height="400">
-      <img src="pennyattackre1.jpg" alt="Vicious" width="600" height="400">
-    </div>
+	<!-- start of 3. At least 5 ORIGINAL IMAGES IN NATIVE SIZE -->
+	<!-- gallery using help from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_gallery -->
+	<div class="responsive">
+		<div class="gallery">
+			<img src="pennybasketball.jpg" alt="Sporty" width="600" height="400">
+			<div class="desc">Add a description of the image here</div>
+		</div>
+	</div>
+
+	<div class="responsive">
+		<div class="gallery">
+			<img src="pennyattackre1.jpg" alt="Vicious" width="600" height="400">
+			<div class="desc">Add a description of the image here</div>
+		</div>
+	</div>
+	
+	<div class="responsive">
+		<div class="gallery">
+			<img src="pennysleep.jpg" alt="Tired" width="600" height="400">
+			<div class="desc">Add a description of the image here</div>
+		</div>
+	</div>
+	
+	<div class="responsive">
+		<div class="gallery">
+			<img src="pennychair.jpg" alt="Hungry" width="600" height="400">
+			<div class="desc">Add a description of the image here</div>
+		</div>
+	</div>
+	
+	<div class="responsive">
+		<div class="gallery">
+			<img src="pennyattackre1.jpg" alt="Vicious" width="600" height="400">
+			<div class="desc">Add a description of the image here</div>
+		</div>
+	</div>
+<div class="clearfix"></div>
+	<!-- end of 3. At least 5 ORIGINAL IMAGES IN NATIVE SIZE -->
 	</body>
 </html>
