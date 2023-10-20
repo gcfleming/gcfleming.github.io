@@ -12,8 +12,7 @@ I'll indicate each of the 3 options I chose
   box-sizing: border-box;
 }
 
-/* setting the overall margin and padding to 0 so I can instead specify for each element instead 
-*/
+/* setting the overall margin and padding to 0 so I can instead specify for each element instead */
 body {
 	margin: 0;
 	padding: 0;
@@ -22,8 +21,8 @@ body {
 	font-size: 24px;
 	text-align: center;
 }
-/* NAVBAR rules - horizontal, inspiration: https://www.w3schools.com/css/css_navbar_horizontal.asp */
-/*dark red navbar with two links that float left, turn pink when active and light pink with black text on hover */
+/* start of NAVBAR OPTION - horizontal, inspiration: https://www.w3schools.com/css/css_navbar_horizontal.asp */
+/*dark red navbar with two links that float left, hides overflow, turns pink when active and light pink with black text on hover */
 .navbar {
 	overflow: hidden;
 	position: relative;
@@ -44,7 +43,7 @@ body {
 .navbar a.active {
   background-color: #ce4c5d;
   color: white;
-}
+} /* end of NAVBAR OPTION */
 
 /* hX and p Rules*/
 /* big red heading for both pages that stays centered - I based the rest of my hX on this after
@@ -104,53 +103,50 @@ ul {
 		
 /* I wanted the bottom heading to stand out more with the same color as the navbar and lighter font 
 so I used an id with help from here https://www.w3schools.com/html/html_id.asp */
-/* */
 #BottomHeading {
 	color: #e399a2;
 	background-color: #6f000e;
 	margin: 0;
 }
-/* after finishing everything, the second page p was way too close to the edge */
-#pageTwo {
-	padding: 10px 10px 10px;
-}
 
-/* 2. 3 UNIQUE LINKS */
+/* 2. 3 UNIQUE LINKS OPTION */
 /* using help from these two https://www.w3schools.com/cssref/css_selectors.php and https://www.w3schools.com/css/css_link.asp 
 I was able to make a class for only the external links to turn white and double underline*/
 a[href^="https"] {
 	color: white;
 	text-decoration-line: underline;
 	text-decoration-style: double;
-}
+} /*END of UNIQUE LINKS OPTION*/
 
+/* start of IMAGES OPTION */
 /* https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp */
-/* I tried lots of methods of making a gallery but */
+/* I tried lots of methods of making a gallery but I had a hard time keeping the pictures from moving weirdly, this method keeps my images at native size */
 galleryImg {
-  width: 100%;
-  height: auto;
+	height: auto;
+	width: 100%;
 }
-desc {
+imgText {
   padding: 15px;
   text-align: center;
 }
 /* setting up the rows of images with equal distance from page, rows of 4 used 
 help from w3 schools - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_gallery*/
 .galleryBehaviour {
-  padding: 0 6px;
+  padding: 0.5px 5.5px;
   float: left;
   width: 24.99999%;
 }
-/* */
+/* I discovered this to organize my images and keep them from shifting at https://www.w3schools.com/howto/howto_css_clearfix.asp 
+this method keeps the images from moving outside of their order or container. unfortunately no other settings than these ones I tried worked for my images */
 .clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+	display: table;
+  	content: "";
+  	clear: both;
+} /*end of IMAGE OPTION*/
+
 /* column rules using help from W3 Grid Container - https://www.w3schools.com/css/css_grid.asp */
-/* I had a hard time cleaning up the text and floating a picture beside it so I decided to split
-it into two columns at the top and then I wanted the 3 links to be horizontal like a footer so I made another
-set of 3 columns at the bottom */
+/* I had a hard time cleaning up the text and floating a picture beside it so I decided to split it into two columns at the top. 
+Then I wanted the 3 links to be horizontal like a footer so I made another set of 3 columns at the bottom. auto allows the grid-item container to form to the text or image inside */
 .grid-top {
   display: grid;
   column-gap: 10px;
