@@ -1,42 +1,39 @@
 <!-- GEOM101 Assignment 2 Website - Grace Cavanagh -->
-<!-- I decided to make a simple website about my new puppy so I could focus most of the time on
-the html and css rather than search for content and come up with information - so hopefully you
-don't care too much about the words cause they're pretty dumb. -->
+<!-- I decided to make a simple website about my new puppy so I could focus most of the time on the html and css 
+rather than search for content - so hopefully the content doesn't matter too much cause it's not the best. -->
 <!-- The 3 options I chose are -
 	1. Navigation Bar
 	2. 3 External Links
-	3. 5 Original Images at Native Size
-	I will indicate when these each begin and end -->
+	3. 5 Original Images at Native Size (I did 8 to make it look even)
+	I will indicate when these each begin and end, and will indicate if something didn't work how I wanted -->
 
 <!DOCTYPE html>
-<!-- put W3 schools here for english declaration -->
+<!-- I used https://www.w3schools.com/tags/ref_language_codes.asp to indicate this website is in English -->
 <html lang="en">
 	<head>
-        <!-- title for the tab -->
+        	<!-- title for the tab and linking the external css sheet from github -->
 		<title>Penny's Resume</title>
-        <!-- linking the external css sheet from github -->
 		<link rel="stylesheet" href="style.css">
 	</head>	
 	<body>
-		<!-- this h1 heading is for both pages -->
+		<!-- this heading is the same for both pages -->
 		<h1>Penny Cavanagh</h1>
 		
-		<!-- start of 1. NAVIGATION BAR on page one, heavily inspired by w3schools at https://www.w3schools.com/css/css_navbar_horizontal.asp -->
-		<!-- creates a white navbar with two pages, one active -->
+		<!-- start of 1. NAVIGATION BAR on page one, heavily helpec by w3schools at https://www.w3schools.com/css/css_navbar_horizontal.asp -->
+		<!-- creates a white navbar with two pages, one active and the other my relative path to 2nd page -->
 		<div class="navbar">
 			<a class="active" href="index.html">Home</a>
 			<a href="aboutme.html">More About Me</a>
 		</div> 
 		<!-- end of 1. NAVIGATION BAR page one -->
 		
-		<!-- first section of page, using help from w3 schools Grid page I made a grid, attempting to fix the 
-		dysfunction of my layout - https://www.w3schools.com/css/css_grid.asp -->
+		<!-- first section of page, using help from w3 schools Grid page I made a grid, attempting to organize my
+		dysfunctional layout - https://www.w3schools.com/css/css_grid.asp -->
 		<div class="grid-top">
 			<div class="grid-item">
 				<!-- I only wanted two columns up top, so I made two different grids for the bottom and top of my page -->
-				<!-- left side of top grid with resume text -->
+				<!-- left side of top grid with resume text, including two unordered lists that didn't go how I wanted but I'll explain in the CSS -->
 				<h2>Interests</h2>
-				<!-- start of two unordered lists -->
 				<ul>
 					<li>Chex Cereal</li>
 					<li>Cigarette Butts</li>
@@ -49,26 +46,31 @@ don't care too much about the words cause they're pretty dumb. -->
 					<li>"Whisper" Barking</li>
 					<li>Turning Left and Right</li>
 					<li>Zoomies</li>
-					<li>Extremely Long Eye Contact</li>
+					<li>Prolonged Eye Contact</li>
 				</ul>
-		
+				<!-- two education inputs with the span bolding the type of training, and centering the dates underneath -->
 				<h2>Education</h2>
 				<h3><span>Certificate of Completion in Puppy School -</span> McCann Professional Dog Trainers</h3>
 				<p class="dates">August 2023 - September 2023</p>
-				<h3><span>House Training</span> My House</h3>
+				<h3><span>House Training -</span> My House</h3>
 				<p class="dates">July 2023 - Current</p>
-
+				
 				<h2>Current Project</h2>
+				<!-- Out of any possible problem I don't know how this and the p on my aboutme.html page were the biggest issues. I still
+				haven't been able to properly center this -->
 				<p>At the moment I'm working on remembering that I was taught how to sit, and to not beg for people food.</p>
 			</div>
-			<!-- right side of top grid with picture -->
+			<!-- right side of top grid with picture - start 3. At least 5 IMAGES AT NATIVE SIZE -->
 			<div class="grid-item">
 				<img src="pennymain.jpg" alt="ProfileImg" width="650" height="867">
 			</div>
+			<!-- end 3. At least 5 IMAGES AT NATIVE SIZE on first page, more on aboutme.html -->
 		</div>
+			<!-- I used an id for this because I wanted to emphasize this particular heading and because it didn't look good with the original h2 css -->
 			<h2 id="BottomHeading">Adopt a Puppy Like Me!</h2>
-		<!-- start of 2. THREE EXTERNAL LINKS, I made another grid with more columns for links and
-		made a specific class for p in grid-bottom so links could center -->
+		<!-- start of 2. THREE EXTERNAL LINKS, I made another grid with more columns for links again with https://www.w3schools.com/css/css_grid.asp and made a 
+		specific class for p in grid-bottom so links could center. I also created a class in css that only changes the look of external links on any page, 
+		got help from https://www.w3schools.com/cssref/css_selectors.php -->
 		<div class="grid-bottom">
 			<div class="grid-item">
 				<p><a href="https://www.haltonhillsdoodles.com/">Halton Hills Labradoodles</a></p>
