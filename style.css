@@ -75,8 +75,7 @@ span {
 }
 
 
-
-/* https://www.w3schools.com/css/css_list.asp */
+/* list rules - referenced from https://www.w3schools.com/css/css_list.asp */
 ul {
 	font-size: 20px;
 	padding: 5px 10px 10px;
@@ -101,6 +100,7 @@ p {
 	color: black;
 	text-align: left;
 	margin-inline-start: 2px;
+	margin-inline-end: 1px;
 	letter-spacing: 1.5px;
 	line-height: 1.8;
 }
@@ -109,13 +109,6 @@ p {
 a[href^="https"] {
 	color: red;
 }
-
-/*the paragraph "p" class b has a very large bottom margin to better space the images
-p.b {
-	text-align: right;
-	font-size: 20px;
-	margin-bottom: 100px;
-} */
 
 /* https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp */
 
@@ -161,6 +154,10 @@ desc {
   padding: 10px;
 }
 
+.grid-bottom p {
+	text-align: center;
+}
+
 .grid-item {
   background-color: #f1ccd0;
   border: 1px solid #f1ccd0;
@@ -168,7 +165,7 @@ desc {
   font-size: 30px;
   text-align: center;
 }
-/*
-.grid-bottom p {
+
+.center {
 	text-align: center;
-}*/
+}
