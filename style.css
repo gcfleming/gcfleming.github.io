@@ -160,7 +160,7 @@ set of 3 columns at the bottom */
 }
 /* */
 .grid-top p {
-	padding: 0px 20px 0px 20px;
+	padding: 0px 20px 0px 50px;
 }
 /* I wanted the links to be centered but they were being overridden by p. so I made the three
 columns and had to add another class for the p in grid-bottom only */
