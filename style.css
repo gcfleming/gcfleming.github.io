@@ -56,7 +56,7 @@ h2 {
 	font-weight: 700;
 	margin: 10px 0 0;
 	font-size: 25px;
-	color:#5d000c;
+	color: #6f000e;
 	padding: 10px 10px 10px 10px;
 	font-family: "Lucida Console", monospace;
 }
@@ -64,7 +64,7 @@ h2 {
 h3 { 
 	font-weight: 300;
 	margin: 10px 0 0;
-	font-size: 20px;
+	font-size: 19px;
 	color:#ce4c5d;
 	padding: 5px 10px 3px;
 	font-family: "Lucida Console", monospace;
@@ -72,7 +72,7 @@ h3 {
 /* had to change the letter spacing and line height because the p text looked really crammed
 compared to the rest of the fonts. used help from https://www.w3schools.com/css/css_text_spacing.asp */
 p {  
-	font-size: 18px;
+	font-size: 16px;
 	color: black;
 	text-align: left;
 	margin-inline-start: 2px;
@@ -156,13 +156,17 @@ set of 3 columns at the bottom */
   background-color: #f1ccd0;
   padding: 0px 50px 0px 50px;
 }
+/* */
+.grid-top p {
+	padding: 0px 20px 0px 20px;
+}
 /* I wanted the links to be centered but they were being overridden by p. so I made the three
 columns and had to add another class for the p in grid-bottom only */
 .grid-bottom {
   display: grid;
   column-gap: 50px;
   grid-template-columns: auto auto auto;
-  background-color: #f1ccd0;
+  background-color: #c73246;
   padding: 10px;
 }
 .grid-bottom p {
@@ -176,6 +180,9 @@ class to modify them */
   padding: 20px;
   font-size: 30px;
   text-align: center;
+}
+.grid-bottom .grid-item {
+	background-color: #c73246
 }
 /* I know I could have made all my p centered and just make the Current Projects p have it's own class
 making it left aligned, but after working on everything the only thing off was just the two dates. So i made it's
